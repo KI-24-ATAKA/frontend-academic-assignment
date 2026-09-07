@@ -1,0 +1,24 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="24" x2="600" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8D5BEA"/>
+      <stop offset="1" stop-color="#DD608D"/>
+    </linearGradient>
+    <filter id="shadow" x="112" y="64" width="416" height="392" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#080D1C" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="640" height="480" rx="36" fill="url(#bg)"/>
+  <circle cx="92" cy="94" r="58" fill="white" fill-opacity="0.08"/>
+  <circle cx="580" cy="410" r="112" fill="white" fill-opacity="0.06"/>
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="190" r="92" fill="#F1C9A8"/>
+    <path d="M232 183C234 105 279 70 326 70C384 70 422 115 412 195C384 167 354 151 312 151C281 151 255 163 232 183Z" fill="#33232A"/>
+    <path d="M194 432C202 325 252 282 320 282C388 282 438 325 446 432H194Z" fill="#56D6FF"/>
+    <circle cx="285" cy="190" r="8" fill="#27314E"/>
+    <circle cx="355" cy="190" r="8" fill="#27314E"/>
+    <path d="M291 231C309 245 331 245 349 231" stroke="#A45854" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <rect x="38" y="380" width="130" height="62" rx="18" fill="#0F1730" fill-opacity="0.76"/>
+  <text x="103" y="421" text-anchor="middle" fill="#F7F8FC" font-family="Arial, sans-serif" font-size="30" font-weight="700">ДК</text>
+</svg>
