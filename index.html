@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Программа, спикеры и контакты Frontend Open Day 2026"
+      content="Регистрация на Frontend Open Day 2026"
     >
 
-    <title>Frontend Open Day 2026</title>
+    <title>Регистрация — Frontend Open Day 2026</title>
 
     <link rel="stylesheet" href="css/base.css">
   </head>
 
   <body class="page">
-    <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
-
     <header class="site-header page__header">
       <div class="layout-container site-header__inner">
         <a class="brand site-header__brand" href="index.html">
@@ -23,300 +21,362 @@
           <span class="brand__text">Frontend Open Day</span>
         </a>
 
-        <nav class="navigation site-header__navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a 
-                class="navigation__link"
-                href="#about"
-              >
-                О событии
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a 
-                class="navigation__link"
-                href="#speakers"
-              >
-                Спикеры
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a 
-                class="navigation__link"
-                href="#schedule"
-              >
-                Расписание
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a 
-                class="navigation__link"
-                href="#contacts"
-              >
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <a class="text-link site-header__back-link" href="#registration-form">
+          К форме
+        </a>
       </div>
     </header>
 
-    <main class="page__main" id="main-content">
-      <section class="event-card layout-container page__hero page__section" id="about">
-        <div class="event-card__content">
-          <span class="badge badge--accent event-card__label">Открытая встреча</span>
+    <main class="page__main">
+      <div class="registration layout-container page__section">
+        <section class="registration-info registration__intro">
+          <span class="badge badge--light registration-info__badge">
+            Регистрация открыта
+          </span>
 
-          <h1 class="event-card__title">Frontend Open Day 2026</h1>
+          <h1 class="registration-info__title">Ваше место</h1>
 
-          <p class="event-card__description">
-            Открытая встреча для тех, кто хочет понять, как устроены современные
-            веб-интерфейсы и с чего начинается работа frontend-разработчика.
+          <p class="registration-info__text">
+            Соберите форму регистрации и посмотрите, что браузер умеет делать
+            с ней без JavaScript.
           </p>
 
-          <div class="event-meta event-card__meta">
-            <time class="event-meta__item" datetime="2026-09-19T10:30">
-              19 сентября · 10:30
-            </time>
-            <span class="event-meta__item">Аудитория Б-301</span>
-          </div>
+          <ul class="benefit-list registration-info__benefits">
+            <li class="benefit-list__item">
+              <span class="benefit-list__marker" aria-hidden="true">1</span>
+              <span>Участие бесплатное</span>
+            </li>
+            <li class="benefit-list__item">
+              <span class="benefit-list__marker" aria-hidden="true">2</span>
+              <span>19 сентября 2026 года, 10:30</span>
+            </li>
+            <li class="benefit-list__item">
+              <span class="benefit-list__marker" aria-hidden="true">3</span>
+              <span>Очный и дистанционный форматы</span>
+            </li>
+          </ul>
 
-          <section class="topic-list event-card__topics">
-            <h2 class="topic-list__title">Что разберём</h2>
-
-            <ul class="topic-list__items">
-              <li class="topic-list__item">Семантический HTML</li>
-              <li class="topic-list__item">CSS и построение макетов</li>
-              <li class="topic-list__item">Работа браузера</li>
-            </ul>
-          </section>
-
-          <a
-            class="button button--accent event-card__action"
-            href="registration.html"
-          >
-            Зарегистрироваться
-          </a>
-        </div>
-
-        <div class="event-card__visual">
           <img
-            class="event-card__image"
-            src="assets/frontend-open-day.svg"
-            alt="Макет веб-страницы с фрагментами HTML-разметки"
+            class="registration-info__visual"
+            src="assets/registration-form.svg"
+            alt="Схематичное изображение формы регистрации"
             width="960"
             height="720"
           >
-        </div>
-      </section>
+        </section>
 
-      <section class="content-section page__section" id="speakers">
-        <div class="layout-container content-section__inner">
-          <header class="section-heading content-section__heading">
-            <p class="section-heading__eyebrow">Спикеры</p>
-            <h2 class="section-heading__title">Три взгляда на современный фронтенд</h2>
-            <p class="section-heading__text">
-              Каждый доклад посвящён отдельному уровню веб-разработки: структуре
-              документа, построению макета и работе браузера.
+        <section class="registration-card registration__card">
+          <header class="form-heading registration-card__heading">
+            <p class="form-heading__eyebrow">Форма участника</p>
+            <h2 class="form-heading__title">Расскажите о себе</h2>
+            <p class="form-heading__text">
+              Сначала добейтесь обычной отправки данных. Затем улучшите эту же
+              форму: добавьте ограничения, группы выбора и нативную проверку.
             </p>
           </header>
 
-          <article class="speaker-list content-section__body">
-            <div class="speaker-list__item">
-              <div class="speaker-card">
-                <img
-                  class="speaker-card__image"
-                  src="assets/anna-voronova.svg"
-                  alt="Иллюстрация Анны Вороновой"
-                  width="640"
-                  height="480"
-                >
-                <div class="speaker-card__content">
-                  <h3 class="speaker-card__name">Анна Воронова</h3>
-                  <p class="speaker-card__role">Frontend-разработчик · веб-доступность</p>
-                  <p class="speaker-card__talk">«HTML — это не набор тегов»</p>
-                  <p class="speaker-card__description">
-                    Как семантическая разметка влияет на навигацию, доступность
-                    и поддержку интерфейса.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="speaker-list__item">
-              <div class="speaker-card">
-                <img
-                  class="speaker-card__image"
-                  src="assets/maxim-ilin.svg"
-                  alt="Иллюстрация Максима Ильина"
-                  width="640"
-                  height="480"
-                >
-                <div class="speaker-card__content">
-                  <h3 class="speaker-card__name">Максим Ильин</h3>
-                  <p class="speaker-card__role">Frontend-разработчик · CSS</p>
-                  <p class="speaker-card__talk">«Почему ломается вёрстка»</p>
-                  <p class="speaker-card__description">
-                    Типичные проблемы блочной модели, переполнения, Flexbox и 
-                    адаптивных интерфейсов.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="speaker-list__item">
-              <div class="speaker-card">
-                <img
-                  class="speaker-card__image"
-                  src="assets/daria-kim.svg"
-                  alt="Иллюстрация Дарьи Ким"
-                  width="640"
-                  height="480"
-                >
-                <div class="speaker-card__content">
-                  <h3 class="speaker-card__name">Дарья Ким</h3>
-                  <p class="speaker-card__role">Инженер · производительность</p>
-                  <p class="speaker-card__talk">«Что браузер делает c вашей страницей»</p>
-                  <p class="speaker-card__description">
-                    Как HTML и CSS превращаются в интерфейс и почему структура 
-                    документа влияет на результат.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section content-section--muted page__section" id="schedule">
-        <div class="layout-container content-section__inner">
-          <header class="section-heading content-section__heading">
-            <p class="section-heading__eyebrow">19 сентября</p>
-            <h2 class="section-heading__title">Расписание</h2>
-            <p class="section-heading__text">
-              Доклады чередуются с перерывами и общим практическим разбором.
+          <form
+            class="registration-form registration-card__form"
+            id="registration-form"
+            action="result.html"
+            method="get"
+          >
+            <p class="form-note registration-form__notice">
+              <span class="form-note__strong">Начните с готового примера:</span>
+              первое поле уже размечено. CSS писать не нужно.
             </p>
-          </header>
 
-          <div class="schedule content-section__body">
-            <table class="schedule__table">
-              <caption class="schedule__caption">Программа Frontend Open Day 2026</caption>
-              <thead class="schedule__head">
-                <tr class="schedule__row schedule__row--head">
-                  <th 
-                    class="schedule__cell schedule__cell--head"
-                    scope="col"
+            <div class="registration-form__grid">
+              <div class="form-field registration-form__field">
+                <label class="form-field__label" for="full-name">
+                  Имя и фамилия
+                  <span class="form-field__required">обязательно</span>
+                </label>
+                <input
+                  class="form-field__control"
+                  id="full-name"
+                  required
+                  autocomplete="name"
+                  minlength="2"
+                  maxlength="80"
+                  name="full_name"
+                  type="text"
+                  placeholder="Например, Анна Смирнова"
+                >
+                <p class="form-field__hint">
+                  От 2 до 80 символов.
+                </p>
+              </div>
+
+              <div class="form-field registration-form__field">
+                <label
+                  class="form-field__label"
+                  for="email"
+                >
+                  Электронная почта
+                  <span class="form-field__required">обязательно</span>
+                </label>
+                <input
+                  class="form-field__control"
+                  required
+                  autocomplete="email"
+                  type="email"
+                  name="email" 
+                  id="email"
+                  placeholder="Например, exemple@mail.com"
+                >
+                <p class="form-field__hint">
+                  Браузер проверит базовый формат адреса.
+                </p>
+              </div>
+
+              <div class="form-field registration-form__field">
+                <label
+                  class="form-field__label"
+                  for="phone-number"
+                >
+                  Номер телефона
+                  <span class="form-field__optional">необязательно</span>
+                </label>
+                <input
+                  class="form-field__control"
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                  id="phone-number"
+                  placeholder="Например, +7 999 123-45-67"
+                >
+              </div>
+
+              <div class="form-field registration-form__field">
+                <label
+                  class="form-field__label"
+                  for="study-year"
+                >
+                  Год обучения
+                  <span class="form-field__required">обязательно</span>
+                </label>
+                <select 
+                  class="form-field__control"
+                  required
+                  name="study_year"
+                  id="study-year"
+                >
+                  <option 
+                    selected
+                    disabled
+                  ></option>
+                  <option value="1">Первый</option>
+                  <option value="2">Второй</option>
+                  <option value="3">Третий</option>
+                  <option value="4">Четвертый</option>
+                  <option value="other">Другое</option>
+                </select>
+              </div>
+
+              <div class="form-field registration-form__field">
+                  <label
+                    class="form-field__label"
                   >
-                    Время
-                  </th>
-                  <th 
-                    class="schedule__cell schedule__cell--head"
-                    scope="col"
+                    Мероприятие
+                  </label>
+                  <input
+                    class="form-field__control form-field__control--readonly"
+                    type="text"
+                    name="event"
+                    readonly
+                    value="Frontend Open Day 2026"
                   >
-                    Событие
-                  </th>
-                  <th 
-                    class="schedule__cell schedule__cell--head"
-                    scope="col"
+                  <p class="form-field__hint">
+                   Поле нельзя изменить, но его значение отправится с формой.
+                  </p>
+                </div>
+
+              <div class="form-field registration-form__field">
+                <label
+                  class="form-field__label"
+                >
+                  Стоимость
+                </label>
+                <input
+                  class="form-field__control form-field__control--disabled"
+                  type="text"
+                  name="price"
+                  readonly
+                  value="Бесплатно"
+                  disabled
+                >
+                <p class="form-field__hint">
+                  Disabled-поле недоступно и не попадает в отправленные данные.
+                </p>
+              </div>
+
+              <fieldset class="form-group registration-form__group registration-form__field--wide">
+                <legend class="choice__title">
+                  Формат участия
+                  <span class="form-group__required">обязательно</span>
+                </legend>
+                <p class="form-group__description">
+                  Выберите один вариант. Оба radio используют одинаковый name.
+                </p>
+                <div class="choice-list choice-list--columns form-group__choices">
+                  <label class="choice choice-list__item">
+                    <input 
+                      class="choice__control"
+                      name="participation"
+                      type="radio"
+                      value="offline"
+                      id="offline"
+                      checked
+                      required
+                    >
+                    <span class="choice__content">
+                      <span class="choice__title">Очно</span>
+                      <span class="choice__description">Аудитория Б-301</span>
+                    </span>
+                  </label>
+
+                  <label class="choice choice-list__item">
+                    <input
+                      class="choice__control"
+                      name="participation"
+                      type="radio"
+                      value="online"
+                      id="online"
+                      required
+                    >
+                    <span class="choice__content">
+                      <span class="choice__title">Онлайн</span>
+                      <span class="choice__description">Ссылка придёт на email</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group registration-form__group registration-form__field--wide">
+                <legend class="choice__title">Что вам интереснее всего?</legend>
+                <p class="form-group__description">
+                  Можно выбрать несколько тем. Все checkbox используют один name.
+                </p>
+                <div class="choice-list choice-list--columns form-group__choices">
+                  <label class="choice choice-list__item">
+                    <input
+                      class="choice__control"
+                      name="topics"
+                      type="checkbox"
+                      value="html-css"
+                    >
+                    <span class="choice__content">
+                      <span class="choice__title">HTML и CSS</span>
+                      <span class="choice__description">Структура и вёрстка</span>
+                    </span>
+                  </label>
+                  <label class="choice choice-list__item">
+                    <input
+                      class="choice__control"
+                      name="topics"
+                      type="checkbox"
+                      value="js-browser"
+                    >
+                    <span class="choice__content">
+                      <span class="choice__title">JavaScript и браузер</span>
+                      <span class="choice__description">Логика и Web API</span>
+                    </span>
+                  </label>
+
+                  <label class="choice choice-list__item">
+                    <input
+                      class="choice__control"
+                      name="topics"
+                      type="checkbox"
+                      value="vue"
+                    >
+                    <span class="choice__content">
+                      <span class="choice__title">Vue</span>
+                      <span class="choice__description">Компоненты и реактивность</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="form-field registration-form__field registration-form__field--wide">
+                <label class="form-field__label" for="question">
+                  Вопрос спикерам
+                  <span class="form-field__optional">необязательно</span>
+                </label>
+                <textarea
+                  class="form-field__control form-field__control--textarea"
+                  id="question"
+                  name="question"
+                  maxlength="300"
+                  placeholder="Напишите вопрос, который хотите обсудить"
+                ></textarea>
+                <p class="form-field__hint">
+                  Не более 300 символов.
+                </p>
+              </div>
+              
+              <div class="form-field registration-form__field registration-form__field--wide">
+                <label class="choice">
+                  <input
+                    class="choice__control"
+                    name="rules"
+                    type="checkbox"
+                    value="accepted"
+                    required
                   >
-                    Спикер
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="schedule__body">
-                <tr class="schedule__row">
-                  <td class="schedule__cell schedule__cell--time">10:30</td>
-                  <td class="schedule__cell">Регистрация участников</td>
-                  <td class="schedule__cell schedule__cell--speaker">Организаторы</td>
-                </tr>
+                  <span class="choice__content">
+                    <span class="choice__title">
+                      Я ознакомился с правилами участия
+                      <span class="form-field__required">обязательно</span>
+                    </span>
+                    <span class="choice__description">Без отметки браузер не отправит форму</span>
+                  </span>
+                </label>
+              </div>
+            </div>
 
-                <tr class="schedule__row">
-                  <td class="schedule__cell schedule__cell--time">11:20</td>
-                  <td class="schedule__cell">HTML — это не набор тегов</td>
-                  <td class="schedule__cell schedule__cell--speaker">Анна Воронова</td>
-                </tr>
+            
+              <!--
+                ЭТАП 2 выполняется после первой успешной отправки формы.
 
-                <tr class="schedule__row--break">
-                  <td class="schedule__cell schedule__cell--time">12:10</td>
-                  <td class="schedule__cell">Перерыв</td>
-                  <td class="schedule__cell schedule__cell--speaker">—</td>
-                </tr>
-           
-                <tr class="schedule__row">
-                  <td class="schedule__cell schedule__cell--time">12:30</td>
-                  <td class="schedule__cell">Почему ломается вёрстка</td>
-                  <td class="schedule__cell schedule__cell--speaker">Максим Ильин</td>
-                </tr>
+                Улучшите созданные выше поля:
+                - имя: required, autocomplete="name", minlength="2", maxlength="80";
+                - email: required, autocomplete="email";
+                - телефон: autocomplete="tel";
+                - select: required; пустой option сделайте selected и disabled.
+              -->
 
-                <tr class="schedule__row">
-                  <td class="schedule__cell schedule__cell--time">14:30</td>
-                  <td class="schedule__cell">Что браузер делает с вашей страницей</td>
-                  <td class="schedule__cell schedule__cell--speaker">Дарья Ким</td>
-                </tr>
-                
-                <tr class="schedule__row">
-                  <td class="schedule__cell schedule__cell--time">15:30</td>
-                  <td class="schedule__cell">Практический разбор интерфейса</td>
-                  <td class="schedule__cell schedule__cell--speaker">Все спикеры</td>
-                </tr>
-                
-                <tr class="schedule__row">
-                  <td class="schedule__cell schedule__cell--time">17:00</td>
-                  <td class="schedule__cell">Завершение</td>
-                  <td class="schedule__cell schedule__cell--speaker">Организаторы</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+              <!-- ЭТАП 2. Добавьте readonly-поле "Мероприятие" и disabled-поле "Стоимость". -->
 
-      <section class="content-section page__section" id="contacts">
-        <div class="layout-container content-section__inner">
-          <div class="contact-card">
-            <div class="contact-card__content">
-              <h2 class="contact-card__title">Остались вопросы?</h2>
-              <p class="contact-card__text">
-                Напишите или позвоните организаторам. Участие бесплатное, но
-                количество мест в аудитории ограничено.
+              <!-- ЭТАП 3. Добавьте fieldset + legend с radio "Очно" и "Онлайн". -->
+
+              <!-- ЭТАП 3. Добавьте fieldset + legend с тремя checkbox интересующих тем. -->
+
+              <!-- ЭТАП 3. Добавьте textarea name="question" с maxlength="300". -->
+
+              <!-- ЭТАП 1 + ЭТАП 3. Добавьте checkbox согласия; на финальном этапе сделайте его required. -->
+
+            <div class="registration-form__actions registration-form__field--wide">
+              <button
+                class="button button--accent registration-form__submit"
+                type="submit"
+              >
+                Отправить заявку
+              </button>
+              <p class="privacy-note registration-form__privacy">
+                Учебная форма не передаёт данные на сервер. Они отображаются только в адресной строке страницы результата.
               </p>
             </div>
-            <address class="contact-card__details">
-              <ul class="contact-list">
-                <li class="contact-list__item">
-                  <span class="contact-list__label">Электронная почта</span>
-                  <a 
-                    class="contact-list__link"
-                    href="mailto:frontend@example.edu"
-                  >
-                    frontend@example.edu
-                  </a>
-                </li>
-                <li class="contact-list__item">
-                  <span class="contact-list__label">Телефон</span>
-                  <a 
-                    class="contact-list__link"
-                    href="tel:+79991234567"
-                  >
-                    +7 999 123-45-67
-                  </a>
-                </li>
-                <li class="contact-list__item">
-                  <span class="contact-list__label">Место проведения</span>
-                  <span class="contact-list__value">Учебный корпус, аудитория Б-301</span>
-                </li>
-              </ul>
-            </address>
-            <!-- ШАГ 11. Добавьте address, список контактов, mailto: и tel:. -->
-          </div>
-        </div>
-      </section>
+          </form>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer page__footer">
       <div class="layout-container site-footer__inner">
         <p class="site-footer__text">Frontend Open Day 2026 · Учебный проект</p>
-        <a class="site-footer__link" href="#about">Вернуться к началу</a>
+        <a class="site-footer__link" href="#registration-form">Вернуться к форме</a>
       </div>
     </footer>
   </body>

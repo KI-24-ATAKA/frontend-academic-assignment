@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Результат отправки учебной формы"
+    >
+
+    <title>Заявка отправлена — Frontend Open Day 2026</title>
+
+    <link rel="stylesheet" href="css/base.css">
+  </head>
+
+  <body class="page">
+    <header class="site-header page__header">
+      <div class="layout-container site-header__inner">
+        <a class="brand site-header__brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="brand__text">Frontend Open Day</span>
+        </a>
+
+        <a class="text-link site-header__back-link" href="index.html">
+          К форме
+        </a>
+      </div>
+    </header>
+
+    <main class="result-shell layout-container page__main">
+      <section class="result-card">
+        <span class="result-card__mark" aria-hidden="true">✓</span>
+        <h1 class="result-card__title">Форма отправлена</h1>
+        <p class="result-card__text">
+          Посмотрите на адресную строку браузера. После знака вопроса появились
+          пары name=value, сформированные из заполненных элементов формы.
+        </p>
+        <code class="result-card__code">
+          result.html?full_name=Анна+Смирнова&amp;email=student%40example.com&amp;study_year=2
+        </code>
+        <p class="result-card__text">
+          Страница ничего не сохраняет: это демонстрация работы form, name,
+          value, метода GET и нативной отправки браузером.
+        </p>
+        <a class="button button--accent result-card__action" href="index.html">
+          Вернуться к форме
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer page__footer">
+      <div class="layout-container site-footer__inner">
+        <p class="site-footer__text">Frontend Open Day 2026 · Учебный проект</p>
+        <a class="site-footer__link" href="index.html">Вернуться к форме</a>
+      </div>
+    </footer>
+  </body>
+</html>
