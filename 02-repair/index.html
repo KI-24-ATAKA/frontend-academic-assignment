@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Учебная страница для диагностики CSS"
+    >
+
+    <title>CSS Repair Lab</title>
+
+    <link rel="stylesheet" href="css/repair.css">
+  </head>
+
+  <body class="repair-page">
+    <header class="repair-hero repair-page__header">
+      <div class="repair-page__container">
+        <span class="status-badge status-badge--featured repair-hero__badge">
+          CSS Repair
+        </span>
+        <h1 class="repair-hero__title">Найдите причину, а не случайное свойство</h1>
+        <p class="repair-hero__text">
+          В этой странице семь намеренных CSS-дефектов. Исправьте их минимальными
+          изменениями, не переписывая HTML и stylesheet с нуля.
+        </p>
+      </div>
+    </header>
+
+    <main class="repair-page__main">
+      <div class="repair-page__container">
+        <article class="resource-card resource-card--featured repair-page__card">
+          <img
+            class="resource-card__image"
+            src="assets/resource-cover.svg"
+            alt="Карточки, слои и CSS-свойства в окне редактора"
+            width="1200"
+            height="720"
+          >
+
+          <span class="status-badge status-badge--featured resource-card__badge">
+            Рекомендуемый материал
+          </span>
+
+          <h2 class="resource-card__title">Каскад, наследование и блочная модель</h2>
+
+          <p class="resource-card__text">
+            Короткое руководство о том, как браузер выбирает правило и почему
+            элемент иногда становится шире родительского контейнера.
+          </p>
+
+          <a
+            class="resource-card__url"
+            href="#resource"
+            id="resource"
+          >
+            https://frontend.example.edu/resources/css/cascade-inheritance-and-the-complete-box-model-guide-for-beginners
+          </a>
+        </article>
+
+        <aside class="notice notice--important repair-page__notice">
+          <p class="notice__text notice__text--important">
+            Важно: не скрывайте горизонтальное переполнение у всей страницы.
+            Найдите элемент, который его создаёт.
+          </p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
