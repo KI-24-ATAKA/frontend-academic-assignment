@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Короткий тренажёр по диагностике Flexbox">
+
+    <title>Flexbox Debug — подготовка к заданию 5</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body class="practice-page">
+    <main class="flex-practice layout-container practice-page__main">
+      <header class="practice-heading flex-practice__heading">
+        <span class="practice-heading__label">Разогрев · 15–25 минут</span>
+        <h1 class="practice-heading__title">Flexbox Debug</h1>
+        <p class="practice-heading__description">
+          Исправьте четыре небольших дефекта. HTML менять не нужно, CSS нельзя
+          переписывать с нуля.
+        </p>
+      </header>
+
+      <section class="debug-case flex-practice__case">
+        <div class="debug-case__heading">
+          <span class="debug-case__number">01</span>
+          <div class="debug-case__heading-copy">
+            <h2 class="debug-case__title">Изображение растянулось по высоте</h2>
+            <p class="debug-case__hint">Сохраните размер 164 × 110 и выровняйте элемент по началу поперечной оси.</p>
+          </div>
+        </div>
+
+        <div class="media-row debug-case__demo">
+          <img
+            class="media-row__image"
+            src="assets/episode-17.svg"
+            alt="Обложка семнадцатого эпизода"
+            width="720"
+            height="480"
+          >
+          <div class="media-row__body">
+            <h3 class="media-row__title">Почему текст ломает flex-контейнер</h3>
+            <p class="media-row__text">
+              В карточке специально много текста. Изображение должно сохранять
+              пропорции и не растягиваться до высоты соседнего содержимого.
+              После исправления у блока останется свободное место снизу.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="debug-case flex-practice__case">
+        <div class="debug-case__heading">
+          <span class="debug-case__number">02</span>
+          <div class="debug-case__heading-copy">
+            <h2 class="debug-case__title">Текст сжимает иконку</h2>
+            <p class="debug-case__hint">Иконка должна остаться 56 × 56, а длинная строка — переноситься.</p>
+          </div>
+        </div>
+
+        <div class="notice-row debug-case__demo">
+          <img
+            class="notice-row__icon"
+            src="assets/wave-icon.svg"
+            alt=""
+            width="96"
+            height="96"
+          >
+          <div class="notice-row__body">
+            <h3 class="notice-row__title">Адрес выпуска</h3>
+            <p class="notice-row__url">https://example.edu/podcasts/frontend/episodes/grid-or-flexbox-when-the-interface-has-a-very-long-address</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="debug-case flex-practice__case">
+        <div class="debug-case__heading">
+          <span class="debug-case__number">03</span>
+          <div class="debug-case__heading-copy">
+            <h2 class="debug-case__title">Фиксированная и резиновая колонки</h2>
+            <p class="debug-case__hint">Левая колонка — 240 px, правая занимает остаток.</p>
+          </div>
+        </div>
+
+        <div class="split-panel debug-case__demo">
+          <aside class="split-panel__aside">Навигация · 240 px</aside>
+          <div class="split-panel__main">
+            Основная область должна получать всё оставшееся пространство и
+            корректно уменьшаться при нехватке места.
+          </div>
+        </div>
+      </section>
+
+      <section class="debug-case flex-practice__case">
+        <div class="debug-case__heading">
+          <span class="debug-case__number">04</span>
+          <div class="debug-case__heading-copy">
+            <h2 class="debug-case__title">Кнопки находятся на разной высоте</h2>
+            <p class="debug-case__hint">Карточки имеют разный объём текста, но действия должны образовать одну линию.</p>
+          </div>
+        </div>
+
+        <div class="demo-card-grid debug-case__demo">
+          <article class="demo-card">
+            <div class="demo-card__body">
+              <h3 class="demo-card__title">Flexbox</h3>
+              <p class="demo-card__text">Одномерное расположение элементов.</p>
+              <a class="demo-card__action" href="#">Открыть</a>
+            </div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-card__body">
+              <h3 class="demo-card__title">Grid</h3>
+              <p class="demo-card__text">
+                Двумерная сетка, в которой строки и колонки проектируются
+                одновременно.
+              </p>
+              <a class="demo-card__action" href="#">Открыть</a>
+            </div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-card__body">
+              <h3 class="demo-card__title">БЭМ</h3>
+              <p class="demo-card__text">
+                Именование блоков, элементов и модификаторов без зависимости от
+                вложенности HTML. Текста здесь намеренно больше, чем в соседних
+                карточках.
+              </p>
+              <a class="demo-card__action" href="#">Открыть</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

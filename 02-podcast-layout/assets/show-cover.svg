@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Обложка подкаста Интерфейсный сигнал</title>
+  <desc id="desc">Абстрактная звуковая волна на фиолетовом фоне</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6d4aff"/>
+      <stop offset="1" stop-color="#2a1c75"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d7ff63"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="80" fill="url(#bg)"/>
+  <circle cx="660" cy="150" r="180" fill="#ffffff" opacity=".08"/>
+  <circle cx="120" cy="700" r="260" fill="#d7ff63" opacity=".08"/>
+  <g fill="url(#wave)">
+    <rect x="116" y="338" width="36" height="124" rx="18"/>
+    <rect x="180" y="284" width="36" height="232" rx="18"/>
+    <rect x="244" y="220" width="36" height="360" rx="18"/>
+    <rect x="308" y="300" width="36" height="200" rx="18"/>
+    <rect x="372" y="166" width="36" height="468" rx="18"/>
+    <rect x="436" y="254" width="36" height="292" rx="18"/>
+    <rect x="500" y="320" width="36" height="160" rx="18"/>
+    <rect x="564" y="278" width="36" height="244" rx="18"/>
+    <rect x="628" y="350" width="36" height="100" rx="18"/>
+  </g>
+  <text x="110" y="685" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="700">interface://signal</text>
+</svg>

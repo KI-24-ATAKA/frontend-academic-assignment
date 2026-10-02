@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебная страница подкаста о фронтенд-разработке">
+
+    <title>Интерфейсный сигнал — подкаст о фронтенде</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body class="page" id="top">
+    <header class="site-header page__header">
+      <div class="layout-container site-header__inner">
+        <a class="brand site-header__brand" href="#top" aria-label="Интерфейсный сигнал — на главную">
+          <span class="brand__mark" aria-hidden="true">//</span>
+          <span class="brand__text">interface:signal</span>
+        </a>
+
+        <nav class="navigation site-header__navigation" aria-label="Основная навигация">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#show">Шоу</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#episodes">Эпизоды</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#topics">Темы</a></li>
+          </ul>
+        </nav>
+
+        <a class="button button--compact button--dark site-header__action" href="#subscribe">
+          Подписаться
+        </a>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <section class="show-hero layout-container page__hero" id="show">
+        <div class="show-intro show-hero__intro">
+          <span class="label label--lime show-intro__label">Подкаст о фронтенде</span>
+
+          <h1 class="show-intro__title">Интерфейсный сигнал</h1>
+
+          <p class="show-intro__description">
+            Разбираем HTML, CSS, устройство браузера и инженерные решения,
+            которые делают интерфейсы понятными и устойчивыми.
+          </p>
+
+          <ul class="meta-list show-intro__meta" aria-label="Информация о подкасте">
+            <li class="meta-list__item">2 сезона</li>
+            <li class="meta-list__item">18 эпизодов</li>
+            <li class="meta-list__item">Новый выпуск каждую неделю</li>
+          </ul>
+
+          <div class="action-group show-intro__actions">
+            <a class="button button--lime action-group__item" href="#episode-18">Слушать выпуск 18</a>
+            <a class="button button--outline-light action-group__item" href="#episodes">Все эпизоды</a>
+          </div>
+        </div>
+
+        <article class="show-card show-hero__card">
+          <img
+            class="show-card__cover"
+            src="assets/show-cover.svg"
+            alt="Абстрактная обложка подкаста Интерфейсный сигнал"
+            width="800"
+            height="800"
+          >
+
+          <div class="show-card__body">
+            <span class="label label--purple show-card__label">Сезон 2</span>
+            <h2 class="show-card__title">Ведущая — Марина Лебедева</h2>
+            <p class="show-card__text">
+              Frontend-инженер. Объясняет не только как написать свойство, но и
+              почему браузер ведёт себя именно так.
+            </p>
+            <a class="button button--accent show-card__action" id="subscribe" href="mailto:signal@example.edu?subject=Подписка%20на%20подкаст">
+              Получать новые выпуски
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <div class="content-layout layout-container page__content">
+        <section class="episode-section content-layout__main" id="episodes">
+          <header class="section-heading episode-section__heading">
+            <div class="section-heading__copy">
+              <span class="section-heading__eyebrow">Свежие материалы</span>
+              <h2 class="section-heading__title">Последние эпизоды</h2>
+            </div>
+            <span class="counter section-heading__counter">5 выпусков</span>
+          </header>
+
+          <div class="episode-grid episode-section__grid">
+            <article class="episode-card episode-card--featured" id="episode-18">
+              <img
+                class="episode-cover episode-cover--wide episode-card__cover"
+                src="assets/episode-18.svg"
+                alt="Обложка эпизода 18"
+                width="720"
+                height="480"
+              >
+
+              <div class="episode-card__body episode-card__body--featured">
+                <div class="episode-card__topline">
+                  <span class="label label--purple episode-card__label">Эпизод 18</span>
+                  <time class="episode-card__date" datetime="2026-08-24">24 августа</time>
+                </div>
+
+                <h3 class="episode-card__title">Grid или Flexbox: как выбрать инструмент раскладки</h3>
+
+                <p class="episode-card__description">
+                  Сравниваем одномерную и двумерную модель, разбираем реальные
+                  компоненты и ищем признаки, по которым выбор становится очевидным.
+                </p>
+
+                <ul class="tag-list episode-card__tags" aria-label="Темы эпизода">
+                  <li class="tag-list__item">CSS</li>
+                  <li class="tag-list__item">Layout</li>
+                  <li class="tag-list__item">Практика</li>
+                </ul>
+
+                <footer class="episode-card__footer">
+                  <span class="episode-card__duration">42 минуты</span>
+                  <a class="button button--compact button--accent episode-card__action" href="#episode-18">Открыть выпуск</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="episode-card" id="episode-17">
+              <img
+                class="episode-cover episode-card__cover"
+                src="assets/episode-17.svg"
+                alt="Обложка эпизода 17"
+                width="720"
+                height="480"
+              >
+
+              <div class="episode-card__body">
+                <div class="episode-card__topline">
+                  <span class="label label--muted episode-card__label">Эпизод 17</span>
+                  <time class="episode-card__date" datetime="2026-08-17">17 августа</time>
+                </div>
+
+                <h3 class="episode-card__title">Почему текст ломает flex-контейнер</h3>
+                <p class="episode-card__description">
+                  Разбираемся с min-content, <code class="inline-code">min-width: 0</code>
+                  и неожиданным сжатием иконок.
+                </p>
+
+                <ul class="tag-list episode-card__tags" aria-label="Темы эпизода">
+                  <li class="tag-list__item">Flexbox</li>
+                  <li class="tag-list__item">Debug</li>
+                </ul>
+
+                <footer class="episode-card__footer">
+                  <span class="episode-card__duration">31 минута</span>
+                  <a class="text-link episode-card__action" href="#episode-17">О выпуске</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="episode-card" id="episode-16">
+              <img
+                class="episode-cover episode-card__cover"
+                src="assets/episode-16.svg"
+                alt="Обложка эпизода 16"
+                width="720"
+                height="480"
+              >
+
+              <div class="episode-card__body">
+                <div class="episode-card__topline">
+                  <span class="label label--muted episode-card__label">Эпизод 16</span>
+                  <time class="episode-card__date" datetime="2026-08-10">10 августа</time>
+                </div>
+
+                <h3 class="episode-card__title">БЭМ без селекторов по вложенности</h3>
+                <p class="episode-card__description">
+                  Блоки, элементы, модификаторы и миксы на примере страницы,
+                  которая не зависит от конкретного дерева тегов.
+                </p>
+
+                <ul class="tag-list episode-card__tags" aria-label="Темы эпизода">
+                  <li class="tag-list__item">БЭМ</li>
+                  <li class="tag-list__item">CSS</li>
+                </ul>
+
+                <footer class="episode-card__footer">
+                  <span class="episode-card__duration">38 минут</span>
+                  <a class="text-link episode-card__action" href="#episode-16">О выпуске</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="episode-card" id="episode-15">
+              <img
+                class="episode-cover episode-card__cover"
+                src="assets/episode-15.svg"
+                alt="Обложка эпизода 15"
+                width="720"
+                height="480"
+              >
+
+              <div class="episode-card__body">
+                <div class="episode-card__topline">
+                  <span class="label label--muted episode-card__label">Эпизод 15</span>
+                  <time class="episode-card__date" datetime="2026-08-03">3 августа</time>
+                </div>
+
+                <h3 class="episode-card__title">Каскад: кто победил и почему</h3>
+                <p class="episode-card__description">
+                  Читаем панель Styles, сравниваем специфичность и учимся не
+                  усиливать селектор без необходимости.
+                </p>
+
+                <ul class="tag-list episode-card__tags" aria-label="Темы эпизода">
+                  <li class="tag-list__item">Каскад</li>
+                  <li class="tag-list__item">DevTools</li>
+                </ul>
+
+                <footer class="episode-card__footer">
+                  <span class="episode-card__duration">29 минут</span>
+                  <a class="text-link episode-card__action" href="#episode-15">О выпуске</a>
+                </footer>
+              </div>
+            </article>
+
+            <!--
+              ЗАДАНИЕ: добавьте сюда карточку эпизода 14.
+              Контент находится в content.md. Используйте существующий блок
+              episode-card и те же классы, что у обычных карточек выше.
+            -->
+
+          </div>
+        </section>
+
+        <aside class="topic-panel content-layout__aside" id="topics">
+          <span class="topic-panel__eyebrow">Навигация по сезону</span>
+          <h2 class="topic-panel__title">Карта тем</h2>
+          <p class="topic-panel__description">
+            Выпуски собраны в последовательность: от структуры документа до
+            поведения layout-систем.
+          </p>
+
+          <ol class="topic-list topic-panel__topics">
+            <li class="topic-list__item">
+              <span class="topic-list__number">01</span>
+              <div class="topic-list__copy">
+                <strong class="topic-list__title">HTML и семантика</strong>
+                <span class="topic-list__meta">3 выпуска</span>
+              </div>
+            </li>
+            <li class="topic-list__item">
+              <span class="topic-list__number">02</span>
+              <div class="topic-list__copy">
+                <strong class="topic-list__title">Каскад и размеры</strong>
+                <span class="topic-list__meta">5 выпусков</span>
+              </div>
+            </li>
+            <li class="topic-list__item topic-list__item--active">
+              <span class="topic-list__number topic-list__number--active">03</span>
+              <div class="topic-list__copy">
+                <strong class="topic-list__title">Flexbox и Grid</strong>
+                <span class="topic-list__meta topic-list__meta--active">4 выпуска</span>
+              </div>
+            </li>
+            <li class="topic-list__item">
+              <span class="topic-list__number">04</span>
+              <div class="topic-list__copy">
+                <strong class="topic-list__title">Браузер</strong>
+                <span class="topic-list__meta">6 выпусков</span>
+              </div>
+            </li>
+          </ol>
+
+          <div class="newsletter topic-panel__newsletter">
+            <span class="newsletter__label">Раз в неделю</span>
+            <h3 class="newsletter__title">Один новый разбор без информационного шума</h3>
+            <a class="button button--dark newsletter__action" href="mailto:signal@example.edu?subject=Подписка%20на%20подкаст">
+              Подписаться
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer page__footer">
+      <div class="layout-container site-footer__inner">
+        <a class="brand brand--muted site-footer__brand" href="#top">
+          <span class="brand__mark" aria-hidden="true">//</span>
+          <span class="brand__text">interface:signal</span>
+        </a>
+        <p class="site-footer__text">Frontend · Модуль 1 · Задание 5</p>
+      </div>
+    </footer>
+  </body>
+</html>

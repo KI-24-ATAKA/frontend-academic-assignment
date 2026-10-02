@@ -1,0 +1,18 @@
+/*
+  Задание 5.
+
+  В base.css уже находятся reset, переменные и базовый стиль страницы.
+  Здесь напишите CSS для всех блоков макета.
+
+  Рекомендуемый порядок:
+  1. layout-container и внешние отступы page;
+  2. site-header, brand, navigation, button;
+  3. show-hero, show-intro, show-card;
+  4. content-layout и section-heading;
+  5. episode-grid и episode-card;
+  6. topic-panel, topic-list, newsletter;
+  7. site-footer и интерактивные состояния.
+
+  Не копируйте эталонные значения из изображения попиксельно. Сначала добейтесь
+  правильной модели раскладки, затем уточняйте размеры, отступы и цвета.
+*/

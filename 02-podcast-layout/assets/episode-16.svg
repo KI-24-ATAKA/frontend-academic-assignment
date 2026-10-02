@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Обложка эпизода 16</title>
+  <desc id="desc">БЭМ без селекторов по вложенности</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087f75"/>
+      <stop offset="1" stop-color="#123c44"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="48" fill="url(#bg)"/>
+  <path d="M0 362 C150 270 270 460 430 340 C540 260 624 300 720 210 V480 H0Z" fill="#72f1b8" opacity=".22"/>
+  <circle cx="590" cy="112" r="72" fill="#72f1b8" opacity=".2"/>
+  <text x="360" y="112" text-anchor="middle" fill="#ffffff" opacity=".72" font-family="Arial, sans-serif" font-size="28" font-weight="700">EPISODE</text>
+  <text x="360" y="286" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="164" font-weight="800">16</text>
+  <text x="360" y="410" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">//signal</text>
+</svg>
