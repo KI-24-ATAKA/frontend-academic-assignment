@@ -305,3 +305,7 @@
   color: var(--text-muted);
   font-size: 14px;
 }
+
+.article-meta__item--red {
+  color: red;
+}
