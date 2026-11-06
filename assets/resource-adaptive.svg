@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Adaptive layout</title>
+  <desc id="desc">Абстрактная иллюстрация учебного материала</desc>
+  <defs>
+    <linearGradient id="bg" x1="74" y1="60" x2="1110" y2="704" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35226f"/>
+      <stop offset="1" stop-color="#6c4df4"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="48" fill="url(#bg)"/>
+  <circle cx="1000" cy="126" r="180" fill="#d8ff5f" opacity=".25" filter="url(#blur)"/>
+  <circle cx="1000" cy="126" r="96" fill="none" stroke="#d8ff5f" stroke-width="5" opacity=".82"/>
+  <path d="M82 590C246 468 386 654 552 526C708 404 826 456 1110 286" fill="none" stroke="#ffffff" stroke-opacity=".34" stroke-width="5" stroke-dasharray="12 18"/>
+  <rect x="82" y="76" width="204" height="50" rx="25" fill="#ffffff" fill-opacity=".14" stroke="#ffffff" stroke-opacity=".24"/>
+  <text x="112" y="109" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="700">FRONTEND ATLAS</text>
+  <g transform="translate(84 180)">
+    <rect width="304" height="304" rx="60" fill="#ffffff" fill-opacity=".13" stroke="#ffffff" stroke-opacity=".26"/>
+    <text x="152" y="206" fill="#d8ff5f" font-family="Arial, sans-serif" font-size="138" font-weight="900" text-anchor="middle">A</text>
+  </g>
+  <text x="84" y="622" fill="#ffffff" font-family="Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="-2">Adaptive layout</text>
+  <text x="88" y="670" fill="#ffffff" fill-opacity=".68" font-family="Arial, sans-serif" font-size="24">Media queries и устойчивые сетки</text>
+  <g transform="translate(828 472)">
+    <rect width="276" height="132" rx="30" fill="#ffffff" fill-opacity=".12" stroke="#ffffff" stroke-opacity=".24"/>
+    <rect x="30" y="28" width="142" height="18" rx="9" fill="#d8ff5f"/>
+    <rect x="30" y="66" width="214" height="14" rx="7" fill="#ffffff" fill-opacity=".52"/>
+    <rect x="30" y="94" width="164" height="14" rx="7" fill="#ffffff" fill-opacity=".28"/>
+  </g>
+</svg>

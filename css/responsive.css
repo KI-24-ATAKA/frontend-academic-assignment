@@ -1,0 +1,274 @@
+
+/* базовая mobile-first композиция (работает без media query от 320 px). */
+.layout-container {
+  width: min(calc(100% - 2rem), 78rem);
+  margin-inline: auto;
+}
+
+.site-header__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "brand action"
+    "navigation navigation";
+  align-items: center;
+  gap: .65rem 1rem;
+  padding-block: .75rem;
+}
+
+.site-header__brand {
+  grid-area: brand;
+  justify-self: start;
+}
+
+.site-header__navigation {
+  grid-area: navigation;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.site-header__action {
+  grid-area: action;
+  justify-self: end;
+}
+
+.navigation__list {
+  display: flex;
+  gap: .25rem;
+  width: max-content;
+}
+
+.navigation__link {
+  display: block;
+  padding: .55rem .7rem;
+  border-radius: .7rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero__content {
+  padding: clamp(1.5rem, 7vw, 3.5rem);
+}
+
+.hero__title {
+  font-size: clamp(2.65rem, 12vw, 4.75rem);
+}
+
+.hero__description {
+  font-size: clamp(1rem, 2.2vw, 1.08rem);
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual__summary {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.action-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .35rem;
+}
+
+.learning-layout,
+.learning-route__grid,
+.principle-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.section-heading__title {
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+
+/* каждый slot стал именованным query container. */
+.resource-slot {
+  min-width: 0;
+  container: resource / inline-size;
+}
+
+.resource-slot--featured {
+  grid-column: 1 / -1;
+}
+
+/* узкий вариант общей карточки остаётся вертикальным. */
+.resource-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.resource-card__media {
+  min-height: 0;
+  aspect-ratio: 1200 / 760;
+}
+
+.resource-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.resource-card__action {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 1.1rem;
+}
+
+.learning-layout__aside {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.progress-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+/* первая перестройка по содержимому — header, hero, сетки и footer. */
+@media (min-width: 48rem) {
+  .layout-container {
+    width: min(calc(100% - 3rem), 78rem);
+  }
+
+  .site-header__inner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "brand navigation action";
+    gap: 1.5rem;
+  }
+
+  .site-header__navigation {
+    justify-self: center;
+  }
+
+  .hero {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  } 
+
+  /* базовая mobile-first композиция (работает без media query от 320 px). */
+  .hero__title {
+    font-size: clamp(3rem, 5.2vw, 4.75rem);
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-visual__image {
+    min-height: 100%;
+  }
+
+  .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .learning-route__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-heading {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .principle-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .site-footer__inner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+}
+
+/* вторая перестройка — 9 колонок main и 3 колонки sticky sidebar. */
+@media (min-width: 70rem) {
+  .learning-layout {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .learning-layout__main {
+    grid-column: span 9;
+  }
+
+  .learning-layout__aside {
+    position: sticky;
+    top: 1rem;
+    grid-column: span 3;
+    align-self: start;
+  }
+}
+
+/* карточка становится горизонтальной по ширине slot, а не viewport. */
+@container resource (min-width: 32rem) {
+  .resource-card {
+    grid-template-columns: minmax(11rem, 38%) minmax(0, 1fr);
+  }
+
+  .resource-card__media {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+}
+
+/* у очень широкой карточки больше воздуха и крупнее заголовок. */
+@container resource (min-width: 48rem) {
+  .resource-card__body {
+    padding: 1.55rem;
+  }
+
+  .resource-card__title {
+    font-size: 1.65rem;
+  }
+}

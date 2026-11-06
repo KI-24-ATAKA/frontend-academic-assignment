@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="940" viewBox="0 0 1320 940" role="img" aria-labelledby="title desc">
+  <title id="title">Карта адаптивного интерфейса</title>
+  <desc id="desc">Абстрактная карта из сетки, карточек и соединяющих маршрутов</desc>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="80" x2="1210" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5b47f5"/>
+      <stop offset="1" stop-color="#1a8b76"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#071812" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <rect width="1320" height="940" rx="58" fill="url(#bg)"/>
+  <g opacity=".17" stroke="#ffffff">
+    <path d="M0 160H1320M0 320H1320M0 480H1320M0 640H1320M0 800H1320"/>
+    <path d="M180 0V940M420 0V940M660 0V940M900 0V940M1140 0V940"/>
+  </g>
+  <circle cx="1110" cy="158" r="210" fill="#d8ff5f" opacity=".18"/>
+  <circle cx="116" cy="782" r="260" fill="#ffffff" opacity=".08"/>
+  <path d="M170 696C302 522 414 642 536 474C662 302 774 412 904 260C1012 134 1116 220 1200 114" fill="none" stroke="#d8ff5f" stroke-width="8" stroke-linecap="round" stroke-dasharray="16 22"/>
+  <g filter="url(#shadow)">
+    <g transform="translate(114 116)">
+      <rect width="426" height="250" rx="34" fill="url(#card)" stroke="#ffffff" stroke-opacity=".32"/>
+      <rect x="28" y="30" width="150" height="18" rx="9" fill="#d8ff5f"/>
+      <rect x="28" y="70" width="320" height="28" rx="14" fill="#ffffff" fill-opacity=".92"/>
+      <rect x="28" y="118" width="272" height="15" rx="7.5" fill="#ffffff" fill-opacity=".48"/>
+      <rect x="28" y="147" width="344" height="15" rx="7.5" fill="#ffffff" fill-opacity=".32"/>
+      <rect x="28" y="194" width="118" height="30" rx="15" fill="#ffffff" fill-opacity=".18"/>
+    </g>
+    <g transform="translate(702 164)">
+      <rect width="392" height="318" rx="34" fill="#102a22" fill-opacity=".72" stroke="#ffffff" stroke-opacity=".24"/>
+      <rect x="26" y="26" width="340" height="152" rx="24" fill="#d8ff5f" fill-opacity=".92"/>
+      <path d="M70 140L130 86L190 126L252 62L322 104" fill="none" stroke="#17372d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="26" y="204" width="220" height="24" rx="12" fill="#ffffff" fill-opacity=".88"/>
+      <rect x="26" y="246" width="314" height="14" rx="7" fill="#ffffff" fill-opacity=".34"/>
+      <rect x="26" y="274" width="232" height="14" rx="7" fill="#ffffff" fill-opacity=".22"/>
+    </g>
+    <g transform="translate(356 560)">
+      <rect width="500" height="214" rx="34" fill="#ffffff" fill-opacity=".16" stroke="#ffffff" stroke-opacity=".28"/>
+      <circle cx="78" cy="76" r="38" fill="#ffbd92"/>
+      <rect x="140" y="46" width="278" height="24" rx="12" fill="#ffffff" fill-opacity=".9"/>
+      <rect x="140" y="88" width="322" height="14" rx="7" fill="#ffffff" fill-opacity=".32"/>
+      <rect x="140" y="116" width="252" height="14" rx="7" fill="#ffffff" fill-opacity=".24"/>
+      <rect x="38" y="162" width="424" height="18" rx="9" fill="#d8ff5f" fill-opacity=".62"/>
+    </g>
+  </g>
+  <g fill="#d8ff5f" stroke="#15342b" stroke-width="8">
+    <circle cx="170" cy="696" r="18"/>
+    <circle cx="536" cy="474" r="18"/>
+    <circle cx="904" cy="260" r="18"/>
+    <circle cx="1200" cy="114" r="18"/>
+  </g>
+</svg>
