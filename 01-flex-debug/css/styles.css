@@ -128,8 +128,11 @@
 
 .media-row__image {
   width: 164px;
+  height: 110px;
+  align-self: flex-start;
   border-radius: 14px;
   object-fit: cover;
+  
 }
 
 .media-row__body {
@@ -162,12 +165,12 @@
   min-width: 0;
   height: 56px;
   border-radius: 16px;
+  flex-shrink: 0;
 }
 
 .notice-row__body {
   min-width: 0;
   flex: 0 0 350px;
-  /* Дефект: текстовая часть отказалась сжиматься и забрала место у иконки. */
 }
 
 .notice-row__title {
@@ -191,12 +194,14 @@
   padding: 18px;
   border-radius: 12px;
   background: var(--surface-soft);
+  flex:0 0 240px;
 }
 
 .split-panel__main {
   padding: 18px;
   border-radius: 12px;
   background: #e8f1ff;
+  flex-grow: 1;
 }
 
 .demo-card-grid {
@@ -216,6 +221,9 @@
 
 .demo-card__body {
   padding: 16px;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .demo-card__title {
@@ -228,6 +236,7 @@
   margin-bottom: 16px;
   color: var(--text-muted);
   font-size: 14px;
+  flex-grow: 1;
 }
 
 .demo-card__action {

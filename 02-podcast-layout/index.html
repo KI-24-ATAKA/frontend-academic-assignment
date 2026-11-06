@@ -225,11 +225,37 @@
               </div>
             </article>
 
-            <!--
-              ЗАДАНИЕ: добавьте сюда карточку эпизода 14.
-              Контент находится в content.md. Используйте существующий блок
-              episode-card и те же классы, что у обычных карточек выше.
-            -->
+            <article class="episode-card" id="episode-14">
+              <img
+                class="episode-cover episode-card__cover"
+                src="assets/episode-14.svg"
+                alt="Обложка эпизода 14"
+                width="720"
+                height="480"
+              >
+
+              <div class="episode-card__body">
+                <div class="episode-card__topline">
+                  <span class="label label--muted episode-card__label">Эпизод 14</span>
+                  <time class="episode-card__date" datetime="2026-07-27">27 июля</time>
+                </div>
+
+                <h3 class="episode-card__title">Что браузер знает о размере блока</h3>
+                <p class="episode-card__description">
+                  От content-box до border-box: считаем итоговый размер и находим причину переполнения без случайного подбора свойств.
+                </p>
+
+                <ul class="tag-list episode-card__tags" aria-label="Темы эпизода">
+                  <li class="tag-list__item">Box model</li>
+                  <li class="tag-list__item">Размеры</li>
+                </ul>
+
+                <footer class="episode-card__footer">
+                  <span class="episode-card__duration">34 минуты</span>
+                  <a class="text-link episode-card__action" href="#episode-14">О выпуске</a>
+                </footer>
+              </div>
+            </article>
 
           </div>
         </section>
