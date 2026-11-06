@@ -1,5 +1,3 @@
-
-/* базовая mobile-first композиция (работает без media query от 320 px). */
 .layout-container {
   width: min(calc(100% - 2rem), 78rem);
   margin-inline: auto;
@@ -108,7 +106,6 @@
   font-size: clamp(2rem, 7vw, 3rem);
 }
 
-/* каждый slot стал именованным query container. */
 .resource-slot {
   min-width: 0;
   container: resource / inline-size;
@@ -118,7 +115,6 @@
   grid-column: 1 / -1;
 }
 
-/* узкий вариант общей карточки остаётся вертикальным. */
 .resource-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -173,7 +169,6 @@
   gap: 1rem;
 }
 
-/* первая перестройка по содержимому — header, hero, сетки и footer. */
 @media (min-width: 48rem) {
   .layout-container {
     width: min(calc(100% - 3rem), 78rem);
@@ -193,7 +188,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   } 
 
-  /* базовая mobile-first композиция (работает без media query от 320 px). */
   .hero__title {
     font-size: clamp(3rem, 5.2vw, 4.75rem);
   }
@@ -231,7 +225,6 @@
   }
 }
 
-/* вторая перестройка — 9 колонок main и 3 колонки sticky sidebar. */
 @media (min-width: 70rem) {
   .learning-layout {
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -250,7 +243,6 @@
   }
 }
 
-/* карточка становится горизонтальной по ширине slot, а не viewport. */
 @container resource (min-width: 32rem) {
   .resource-card {
     grid-template-columns: minmax(11rem, 38%) minmax(0, 1fr);
@@ -262,7 +254,6 @@
   }
 }
 
-/* у очень широкой карточки больше воздуха и крупнее заголовок. */
 @container resource (min-width: 48rem) {
   .resource-card__body {
     padding: 1.55rem;
