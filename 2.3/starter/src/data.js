@@ -27,4 +27,9 @@ export const productsToAdd = [
     title: "TypeScript для frontend",
     price: 2300,
   },
+  {
+    id: 7,
+    title: "React для frontend",
+    price: 1,
+  },
 ];

@@ -2,11 +2,7 @@ import { products } from "./products.js";
 import { getCatalogSummary, selectProducts } from "./catalog.js";
 
 const options = {
-  category: "books",
-  inStockOnly: true,
-  maxPrice: 2500,
-  query: "frontend",
-  sort: "rating-desc",
+  sort: "title-asc",
 };
 
 const visibleProducts = selectProducts(products, options);

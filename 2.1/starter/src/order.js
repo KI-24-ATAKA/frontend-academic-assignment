@@ -25,7 +25,7 @@ export function calculateSubtotal(price, quantity) {
 }
 
 export function calculateDiscount(subtotal, promoCode) {
-  return subtotal * PROMO_DISCOUNTS[promoCode] ?? 0;
+  return subtotal * (PROMO_DISCOUNTS[promoCode] ?? 0);
 }
 
 export function calculateDelivery(amountAfterDiscount, deliveryType) {

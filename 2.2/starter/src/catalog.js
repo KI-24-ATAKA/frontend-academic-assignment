@@ -48,7 +48,7 @@ export function filterProducts(products, filters = {}) {
 }
 
 export function searchProducts(products, query) {
-  if (query == "") {
+  if (query == ""  || query == undefined) {
     return products;
   }
   
@@ -87,7 +87,7 @@ export function sortProducts(products, sort = "default") {
       sortedProducts.sort((a, b) => b.rating - a.rating)
       return sortedProducts;
     case "title-asc":
-      sortedProducts.sort((a, b) => a.title.localCompare(b.title, "ru"));
+      sortedProducts.sort((a, b) => a.title.localeCompare(b.title, "ru"));
       return sortedProducts;
     default:
       return sortedProducts;

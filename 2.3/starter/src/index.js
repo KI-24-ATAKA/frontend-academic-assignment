@@ -13,6 +13,8 @@ cart = addItem(cart, productsToAdd[0]);
 cart = addItem(cart, productsToAdd[1]);
 cart = changeQuantity(cart, 1, 3);
 cart = applyPromoCode(cart, " student10 ");
+cart = addItem(cart, productsToAdd[2])
+cart = changeQuantity(cart, 7, 10)
 
 console.log("Итоговая корзина:");
 console.table(cart.items);
